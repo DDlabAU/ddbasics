@@ -8,6 +8,6 @@ void setup() {
 }
 
 void loop() {
-  sweepTo(180,5);
+  sweepTo(100,5);
   sweepTo(0,1);
 }

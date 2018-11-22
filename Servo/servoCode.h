@@ -4,6 +4,11 @@ int servoType;
 
 int pos = 0;
 
+int mappingF(int input){
+  int mappedValue = map(input, 0, 100, 0, servoType);
+  return mappedValue;
+}
+
 void maxP(){
   myservo.write(servoType);
   pos = servoType;
@@ -15,25 +20,26 @@ void minP(){
 }
 
 void goTo(int i){
-    myservo.write(i);
+    myservo.write(mappingF(i));
     pos = i;
 }
 
 void sweepTo(int goal, float t){
-  int steps = abs(pos-goal);
+  int mGoal = mappingF(goal);
+  int steps = abs(pos-mGoal);
   int timeSteps = t*1000/steps;
   if(pos<goal){
-    for(int i=pos; i<=goal; i++){
+    for(int i=pos; i<=mGoal; i++){
       myservo.write(i);
       delay(timeSteps);
     }
   }else{
-    for(int i=pos; i>=goal; i--){
+    for(int i=pos; i>=mGoal; i--){
       myservo.write(i);
       delay(10);
     }
   }
-  pos = goal;
+  pos = mGoal;
 }
 
 void pause(float t){
