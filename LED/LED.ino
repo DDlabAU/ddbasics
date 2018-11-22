@@ -9,10 +9,10 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  ledOn(1,green);
-  ledOn(2,white);
+  ledOn(1,green, 50);
+  ledOn(2,white, 10);
   pause(1.5);
-  ledOn(1, purple);
-  ledOn(2, black);
+  ledOn(1, purple, 5);
+  ledOn(2, cyan, 80);
   pause(2);
 }

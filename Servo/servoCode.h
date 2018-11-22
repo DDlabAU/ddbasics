@@ -1,5 +1,5 @@
 Servo myservo;
-int servoType = 180;
+int servoType;
 // int servoType = 360;
 
 int pos = 0;
@@ -19,11 +19,13 @@ void goTo(int i){
     pos = i;
 }
 
-void sweepTo(int goal){
+void sweepTo(int goal, float t){
+  int steps = abs(pos-goal);
+  int timeSteps = t*1000/steps;
   if(pos<goal){
     for(int i=pos; i<=goal; i++){
       myservo.write(i);
-      delay(10);
+      delay(timeSteps);
     }
   }else{
     for(int i=pos; i>=goal; i--){
