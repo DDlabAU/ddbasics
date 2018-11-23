@@ -1,4 +1,3 @@
-#include <Servo.h>
 #include "servoCode.h"
 
 void setup() {

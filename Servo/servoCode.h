@@ -1,3 +1,4 @@
+#include <Servo.h>
 Servo myservo;
 int servoType;
 // int servoType = 360;
