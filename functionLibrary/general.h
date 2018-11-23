@@ -1,4 +1,4 @@
-int caliZero = 0;
+float caliZero = 0;
 
 int getValue(int name) {
   int val = analogRead(name);
