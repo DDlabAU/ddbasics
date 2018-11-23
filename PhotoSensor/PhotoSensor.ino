@@ -4,7 +4,7 @@ const int lightPin = 5;
 int value = 0;
 
 void setup() {
-
+  calibrate(lightPin);
 }
 
 void loop() {
