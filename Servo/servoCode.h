@@ -42,8 +42,3 @@ void sweepTo(int goal, float t){
   }
   pos = mGoal;
 }
-
-void pause(float t){
-  int p = t * 1000;
-  delay(p);
-}

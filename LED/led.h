@@ -19,8 +19,3 @@ void ledOn(int n, int col[], int bright){
   pixels.setPixelColor(n-1, pixels.Color(col[0]*mapped,col[1]*mapped,col[2]*mapped));
   pixels.show(); // This sends the updated pixel color to the hardware.
 }
-
-void pause(float t){
-  int p = t * 1000;
-  delay(p);
-}

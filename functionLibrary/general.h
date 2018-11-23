@@ -15,3 +15,8 @@ void calibrate(int name) {
   int three = analogRead(name);
   caliZero = (one+two+three) / 3;
 }
+
+void pause(float t){
+  int p = t * 1000;
+  delay(p);
+}
