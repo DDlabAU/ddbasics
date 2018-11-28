@@ -1,6 +1,6 @@
 int buttonPin;
 
-boolean ButtonIsDown(int name) {
+boolean buttonIsDown(int name) {
   int buttonState = digitalRead(name);
   if (buttonState == HIGH) {
     return true;
@@ -9,7 +9,7 @@ boolean ButtonIsDown(int name) {
   } 
 }
 
-boolean isButtonUp(int name) {
+boolean buttonIsUp(int name) {
   int buttonState = digitalRead(name);
   if (buttonState == HIGH) {
     return false;
