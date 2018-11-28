@@ -7,7 +7,7 @@ boolean lowerHalf(int name) {
   }
 }
 
-boolean UpperHalf(int name) {
+boolean upperHalf(int name) {
   int value = analogRead(name);
   if (value >= 511) {
     return true;
@@ -16,7 +16,7 @@ boolean UpperHalf(int name) {
   }
 }
 
-boolean islowest(int name) {
+boolean isLowest(int name) {
   int value = analogRead(name);
   if (value == 0) {
     return true;
