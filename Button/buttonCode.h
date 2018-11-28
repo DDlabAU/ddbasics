@@ -1,3 +1,5 @@
+int buttonPin;
+
 boolean ButtonIsDown(int name) {
   int buttonState = digitalRead(name);
   if (buttonState == HIGH) {
