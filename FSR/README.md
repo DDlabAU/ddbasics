@@ -2,6 +2,6 @@
 
 Source for opsætning: https://learn.adafruit.com/force-sensitive-resistor-fsr/using-an-fsr
 
-Hardware:
+**Hardware:**
 - FSR sensor
 - 10 kΩ modstand
