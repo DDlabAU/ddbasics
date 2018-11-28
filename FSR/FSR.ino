@@ -13,7 +13,7 @@ void setup() {
 void loop() {
   if (isTouched(fsrPin)) {
     //write what happens if the sensor is touched
-    //getValue reads the force put upon the sensor
+    //getValue reads the force put upon the sensor as a number between 0 (no force) and 100 (max force)
     value = getValue(fsrPin);
   } else {
     //write what happens if the sensor is not touched
