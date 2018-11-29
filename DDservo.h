@@ -37,7 +37,7 @@ void sweepTo(int goal, float t){
   }else{
     for(int i=pos; i>=mGoal; i--){
       myservo.write(i);
-      delay(10);
+      delay(timeSteps);
     }
   }
   pos = mGoal;
