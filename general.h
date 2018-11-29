@@ -7,7 +7,7 @@ int getValue(int name) {
   return mapped;
 }
 
-void calibrate(int name) {
+int calibrate(int name) {
   int one = analogRead(name);
   delay(5);
   int two = analogRead(name);

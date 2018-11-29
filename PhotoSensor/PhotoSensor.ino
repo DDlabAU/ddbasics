@@ -7,8 +7,7 @@ int value = 0;
 
 void setup() {
   //calibrate the sensor to avoid inaccuracy
-  //NB! this can only be done to one of your inputs
-  calibrate(lightPin);
+  caliPhoto = calibrate(lightPin);
 }
 
 void loop() {

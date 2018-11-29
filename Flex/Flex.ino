@@ -1,5 +1,5 @@
-#include "DDflex.h"
 #include "general.h"
+#include "DDflex.h"
 
 //Set the pin which is connected to the flex sensor
 const int flexPin = 2;
@@ -7,8 +7,7 @@ int value;
 
 void setup() {
   //calibrate the sensor to avoid inaccuracy
-  //NB! This can only be done to one of your inputs
-  calibrate(flexPin);
+  caliBend = calibrate(flexPin);
 }
 
 void loop() {
