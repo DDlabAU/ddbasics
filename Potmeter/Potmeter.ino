@@ -1,4 +1,5 @@
-#include "potmeterCode.h"
+#include "DDpot.h"
+#include "general.h"
 
 //Set the pin which the potentiometer is connected to
 const int potPin = 4;

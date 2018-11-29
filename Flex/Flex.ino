@@ -1,4 +1,5 @@
-#include "flexCode.h"
+#include "DDflex.h"
+#include "general.h"
 
 //Set the pin which is connected to the flex sensor
 const int flexPin = 2;

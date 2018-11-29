@@ -1,4 +1,5 @@
-#include "photoSensorCode.h"
+#include "DDphoto.h"
+#include "general.h"
 
 //Set the pin which is connected to the sensor
 const int lightPin = 5;
