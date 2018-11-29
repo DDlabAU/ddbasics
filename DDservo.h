@@ -6,7 +6,7 @@ int servoType;
 int pos = 0;
 
 int mappingF(int input){
-  int mappedValue = map(input, 0, 100, 0, servoType);
+  int mappedValue = map(input, 0, servoType, 0, 100);
   return mappedValue;
 }
 
