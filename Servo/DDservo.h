@@ -16,6 +16,8 @@ class DDservo
     void sweepTo(int goal, float t);
     int getPos();
     void setType(int type);
+    void activate();
+    void deactivate();
   private:
     int _servoType;
     int _pos;

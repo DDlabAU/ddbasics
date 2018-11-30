@@ -6,7 +6,7 @@ DDservo::DDservo(int pin){
   Servo _servo;
   _pin = pin;
   _servoType = 180;
-  _servo.attach(_pin);
+  // _servo.attach(_pin);
   minP();
   _pos = 0;
 }
@@ -55,4 +55,11 @@ void DDservo::sweepTo(int goal, float t){
 
 int DDservo::getPos(){
   return _pos;
+}
+
+void DDservo::activate(){
+  _servo.attach(_pin);
+}
+void DDservo::deactivate(){
+  _servo.detach();
 }
