@@ -13,4 +13,4 @@ Forsøg med at gøre det objektorienteret.
 * potmeter - ny grafik... mener adafruit har en layout ellers så kan et af pcb boards'ne
 * gennemgå alle eksempler inden de bliver objekt for at gøre dem simple og skrive funktioner tydeligt ud. Overblik over hvad der er relevant i forhold til hvilken sensor.
 * læse algoritmer som en opskrift.
-* 
+* husk at lave ordentligt integration med "general"
