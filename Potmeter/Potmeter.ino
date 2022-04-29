@@ -16,6 +16,5 @@ void loop() {
     value = getValue(potPin);
   } else if (upperHalf(potPin)) {
     //write what happens if the potentiometer is placed somewhere at its lowest half of values. Likewise use lowerHlf to test for the lower half og values
-    value = 100;
   }
 }
