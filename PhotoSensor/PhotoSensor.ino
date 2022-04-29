@@ -17,9 +17,8 @@ void loop() {
     value = getValue(lightPin);
    } else if (dark(lightPin)) {
     //write what happens if the surroundings are very dark
-    value = -1*getValue(lightPin);
+
    } else {
     //write what happens if the surroundings are neither vert bright nor very dark
-    value = 0;
    }
 }
