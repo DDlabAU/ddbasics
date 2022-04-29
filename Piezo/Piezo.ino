@@ -1,22 +1,29 @@
-const int buzzer = 9; //buzzer to arduino pin 9
+#include "DDpiezo.h"
+#include "general.h"
+
+//variable used for the pin you connect the piezo to
+const int piezoPin = 9;
 
 
 void setup(){
-
-  pinMode(buzzer, OUTPUT); // Set buzzer - pin 9 as an output
-
+  pinMode(piezoPin, OUTPUT);
 }
 
 void loop(){
-
-  play(buzzer,0); // Send 1KHz sound signal...
-  delay(1000);
-  play(buzzer,50); // Send 1KHz sound signal...
-  delay(1000);
-  play(buzzer,100); // Send 1KHz sound signal...
-  //tone(buzzer, 1046 );
-  delay(1000);        // ...for 1 sec
-  noTone(buzzer);     // Stop sound...
-  delay(1000);        // ...for 1sec
+  //play a note in a pitch from 1 to 100. Play has 2 parameters:
+  //1st: The pin the piezo is connected to
+  //2nd: The pitch within a range of 1 to 100 you want the buzzer to play
+  play(piezoPin,50);
+  //pause for the amount of time (in seconds) that you want the peizo to sound
+  pause(1);
+  //play the highest note of the piezo
+  highestNote(piezoPin);
+  pause(1);
+  //play the lowest note of the piezo
+  lowestNote(piezoPin);
+  pause(1);
+  //stop the sound from the piezo
+  noTone(piezoPin);
+  pause(1);
 
 }
