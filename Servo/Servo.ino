@@ -12,7 +12,7 @@ void setup() {
 void loop() {
   //sweepTo has two parameters:
   //1st: the position you want the servo to go indicated as a number between 0 and 100
-  //2nd: The speed at which it moves to this position
-  sweepTo(100,5);
-  sweepTo(0,1);
+  //2nd: The time for which it takes to moves to the final position, in seconds
+  sweepTo(100,5); //means sweep to position 100 in 5 seconds
+  sweepTo(0,1); //means sweep to position 0 in 1 seconds
 }
